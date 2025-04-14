@@ -1,0 +1,508 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#div1{
+    background-color: skyblue;
+    height: 90px;
+}
+
+#div1 h1{
+    text-align: center;
+}
+
+#div1 p{
+    text-align: center;
+    margin-top: 15px;
+}
+
+@media (min-width:0px) and (max-width:480px){
+    #div1 h1 {
+        font-size: 1.5rem;
+    }
+
+    #div1 p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px){
+    #div1 h1 {
+        font-size: 1.8rem;
+    }
+
+    #div1 p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1279px){
+    #div1 h1 {
+        font-size: 2rem;
+    }
+
+    #div1 p {
+        font-size: 1.5rem;
+        padding: 0 10px;
+    }
+}
+
+@media  (max-width:1280px){
+    #div1 h1 {
+        font-size: 2rem;
+    }
+
+    #div1 p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+
+
+
+nav{
+    background-color: black;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+#nav_div{
+    
+    
+    margin-left: 450px;
+}
+
+#nav_div li{
+    color: white;
+    display: inline-block;
+   
+   
+    padding: 15px;
+}
+
+#nav_div li:hover{
+    background-color: rgb(94, 93, 93);
+}
+
+
+#img_div{
+    background-image: url("./couple-with-shopping-bags-looking-each-other_116547-106030.avif");
+    width: 100%;
+    height: 550px;
+    clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
+}
+
+#img_div h1{
+    font-size: 40px;
+    margin-left: 800px;
+   
+    position: relative;
+    top: 100px;
+}
+
+#img_div p{
+    
+    margin-left: 900px;
+    
+    position: relative;
+    top: 130px;
+}
+
+#img_div button{
+    border: none;
+    margin-left: 1000px;
+    padding: 10px;
+    background-color: rgb(71, 71, 115);
+    position: relative;
+    top: 160px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    -webkit-animation: heartbeat 2.5s ease-in-out infinite both;
+	        animation: heartbeat 2.5s ease-in-out infinite both;
+}
+
+
+#main_section_div{
+    margin-left:230px ;
+    margin-right: 230px;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+}  
+
+#second_section h3{
+    text-align: center;
+    color: rgb(52, 52, 85);
+    margin: 20px;
+    font-size: 25px;
+    -webkit-animation: blink-1 3s infinite both;
+	        animation: blink-1 3s infinite both;
+}
+
+.img_divs{
+    border: 2px solid rgb(255, 255, 255);
+    width: 320px;
+    height: 400px;
+    background-color: rgb(235, 229, 229);
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.img_divs:hover{
+    transform: scale(1.04);
+    transition: 0.2s ease-in-out;
+}
+
+.img_divs img{
+    margin: 18px 0px 0px 18px;
+    
+    border-radius: 15px;
+}
+
+.img_divs h2 {
+    text-align: center;
+    color: rgb(26, 26, 98);
+    margin: 15px;
+    font-size: 25px;
+    -webkit-animation: blink-1 3s infinite both;
+	        animation: blink-1 3s infinite both;
+}
+
+.img_divs p {
+    text-align: center;
+    color: rgb(100, 95, 95);
+    margin: 15px;
+    font-size: 25px;
+}
+
+.img_divs button {
+    text-align: center;
+    background-color: rgb(77, 77, 127);
+    margin-left:105px;
+    margin-top: 5px;
+    font-size: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    color: white; 
+    -webkit-animation: heartbeat 2.5s ease-in-out infinite both;
+	        animation: heartbeat 2.5s ease-in-out infinite both;
+}
+
+
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+/* Service section */
+
+#section_three{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+#section_three h1{
+    text-align: center;
+    color: rgb(52, 52, 85);
+    margin-bottom: 10px;
+    -webkit-animation: blink-1 3s infinite both;
+	        animation: blink-1 3s infinite both;
+}
+
+@-webkit-keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+  @keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+
+#service_main_div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+   
+}
+
+.service_div{
+    
+    height: 100px;
+     padding: 1rem;
+    text-align: center;
+    
+    border-radius: 5px;
+    background-color: rgb(235, 229, 229);
+}
+
+.service_div p{
+    margin-top: 10px;
+}
+
+/* Client section */
+
+#client_section{
+    background-color: skyblue;
+    text-align: center;
+    padding: 20px;
+}
+
+#client_section h1,
+#client_section p {
+    margin-top: 20px;
+}
+
+/* Memberhip Section */
+
+#membership_div{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    height: 150px;
+    padding: 20px;
+    
+}
+
+#membership_section > h1{
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(52, 52, 85);
+    -webkit-animation: blink-1 3s infinite both;
+	        animation: blink-1 3s infinite both;
+}
+
+.inside_divs{
+    height: 100px;
+    border-radius: 5px;
+    background-image: url("./charger-usb-cable-type-c-blue-background_58702-4511.avif");
+    text-align: center;
+    
+}
+
+.inside_divs h1,
+.inside_divs p{
+    margin-top: 10px;
+}
+
+/* Blog section */
+
+#blog_section{
+    
+    padding: 20px;
+    background-color: rgb(226, 221, 221);
+}
+
+.blog_div h3,
+.blog_div p{
+   margin-top: 10px;
+}
+
+#blog_div2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Gallery section */
+
+#gallery_section{
+    
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+#gallery_section > h1{
+    color: rgb(52, 52, 85);
+    padding: 10px;
+    text-align: center;
+    -webkit-animation: blink-1 3s infinite both;
+	        animation: blink-1 3s infinite both;
+}
+
+#gallery_main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+#gallery_main img {
+    width: 100%;
+    height: auto;
+    
+    border-radius: 8px;
+}
+ 
+/* FAQ section */
+
+#faq_section{
+    color: white;
+    padding: 20px;
+    background-color: rgb(96, 93, 93);
+}
+
+.faq_div h3,
+.faq_div p{
+   margin-top: 10px;
+
+}
+
+#faq_div2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Form section */
+
+#form_section{
+    background-color: rgb(218, 215, 215);
+}
+
+#form_section > h1{
+    text-align: center;
+    color: rgb(52, 52, 85);
+    padding: 10px;
+}
+
+form{
+    max-width: 700px;
+    margin: 0 auto;
+    
+}
+
+input{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 60px;
+}
+
+textarea{
+    margin:10px ;
+    padding: 10px;
+    margin-left: 60px;
+}
+
+#form_button{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    color:white;
+    background-color: blue; 
+    margin-bottom: 10px;
+    margin-left: 60px;
+    border: none;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(83, 80, 80);
+    height: 100px;
+    padding: 30px;
+}

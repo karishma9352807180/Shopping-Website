@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(198, 232, 220);
+        }
+        #main_div{
+            border: 2px solid grey;
+            width: 380px;
+            height: 360px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        #number{
+            width: 300px;
+            padding: 13px;
+            border-radius: 5px;
+            margin: 20px;
+            
+            border-color: rgb(171, 166, 166);
+            font-size: 15px;
+            outline: none;
+        }
+
+        #number:hover{
+            border-color: blue;
+        }
+
+        #password{
+            padding: 13px;
+            width: 300px;
+            border-radius: 5px;
+            margin-left: 20px;
+            border-color: rgb(171, 166, 166);
+            font-size: 15px;
+            outline: none;
+        }
+
+        #password:hover {
+            border-color: blue;
+        }
+
+        #button1{
+            padding: 10px;
+            width: 330px;
+            border-radius: 5px;
+            margin: 20px;
+            font-size: 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+
+        p{
+            text-align: center;
+            margin-top: 0px;
+            color: blue;
+        }
+
+        #button2{
+            padding: 10px;
+            font-size: 20px;
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+            margin:20px; 
+            margin-left: 80px;
+            border: none;
+        }
+        hr{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main_div">
+       <input id="number" type="text" placeholder="Email address or phone number">
+       <br>
+       <input id="password" type="password" placeholder="Password">
+       <br>
+       <button id="button1">Log in</button>
+       <br>
+       <p>Forgotten Password?</p>
+       <hr>
+       <button id="button2">Create new account</button>
+    </div>
+</body>
+</html>
